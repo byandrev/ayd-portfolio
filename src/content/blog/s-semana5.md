@@ -1,7 +1,7 @@
 ---
 title: 'Semana 5: Calidad de Software y Métricas'
-description: 'Analizamos cómo medir la calidad en el desarrollo de software y qué herramientas nos permiten hacerlo de forma objetiva.'
-pubDate: 2025-04-05T22:00:00.000Z
+description: ''
+pubDate: 2025-02-24T22:00:00.000Z
 heroImage: ../../assets/images/calidad_software.jpg
 category: Software
 tags:

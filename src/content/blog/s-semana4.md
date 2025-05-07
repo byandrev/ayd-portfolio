@@ -1,87 +1,81 @@
 ---
-title: 'Semana 4: Riesgos en el Software'
-description: 'Exploramos cómo identificar, analizar y mitigar los riesgos en los proyectos de desarrollo de software.'
-pubDate: 2025-03-29T22:00:00.000Z
-heroImage: ../../assets/images/gestion_de_riesgos.jpg
+title: 'Semana 4: Análisis PERT en Proyectos de Software'
+description: ''
+pubDate: 2025-02-24T22:00:00.000Z
+heroImage: ../../assets/images/analisis_pert.jpg
 category: Software
 tags:
   - clase
 ---
 
-# 🔍 Riesgos en el Software: Anticipar para Proteger el Proyecto
+# 🧮 Análisis PERT: Estimaciones Realistas para Proyectos de Software
 
-Durante la semana 4 del curso de Ingeniería de Software, nos enfocamos en un aspecto fundamental para el éxito de cualquier proyecto: la **gestión de riesgos**. Comprender qué son los riesgos, cómo afectan al desarrollo y qué estrategias existen para manejarlos nos permite construir software más estable, seguro y sostenible.
-
----
-
-## ¿Qué son los Riesgos en el Software?
-
-Un **riesgo** es cualquier evento potencial que, de materializarse, puede afectar negativamente el proyecto. Los riesgos pueden surgir en cualquier etapa del ciclo de vida del software y, si no se gestionan adecuadamente, pueden traducirse en fallos técnicos, sobrecostos, demoras o pérdida de calidad.
-
-> **Ejemplo realista:**  
-> Si dependemos de una API de terceros y esta deja de funcionar inesperadamente, todo el sistema que depende de ella puede fallar, generando pérdida de funcionalidad y usuarios insatisfechos.
+Durante la semana 4 del curso de Ingeniería de Software, exploramos el **método PERT** (Program Evaluation and Review Technique), una técnica fundamental para la **estimación de tiempos** y la **planificación de actividades** en proyectos complejos, como lo son los de desarrollo de software.
 
 ---
 
-## Tipos de Riesgos Comunes en Proyectos de Software
+## ⏱️ ¿Qué es el Método PERT?
 
-Los riesgos se pueden clasificar en varias categorías:
+El método PERT permite **estimar la duración de tareas** cuando hay incertidumbre, usando tres valores:
 
-| **Tipo de Riesgo**        | **Ejemplo**                                                              |
-|---------------------------|--------------------------------------------------------------------------|
-| **Técnico**               | Usar tecnologías nuevas sin experiencia previa.                          |
-| **De Requisitos**         | Cambios frecuentes en lo que el cliente espera del sistema.              |
-| **De Personal**           | Pérdida de un desarrollador clave en mitad del proyecto.                 |
-| **De Herramientas**       | Dependencia de herramientas obsoletas o con soporte limitado.            |
-| **De Proyecto**           | Plazos poco realistas o presupuesto insuficiente.                        |
-| **De Calidad**            | Falta de pruebas o control deficiente del producto final.                |
-| **De Seguridad**          | Vulnerabilidades no identificadas en el sistema.                         |
+- **Tiempo optimista (O):** El mínimo tiempo posible si todo va bien.
+- **Tiempo más probable (M):** El tiempo esperado en condiciones normales.
+- **Tiempo pesimista (P):** El máximo tiempo posible si algo sale mal.
 
----
+Con estos valores, se calcula un **tiempo esperado (TE)** para cada actividad:
 
-## ¿Cómo se Gestionan los Riesgos?
+\[
+\text{TE} = \frac{O + 4M + P}{6}
+\]
 
-La **gestión de riesgos** es un proceso proactivo que busca anticiparse a los problemas y reducir su impacto. Consta de varias etapas:
-
-### 1. Identificación de Riesgos
-
-Se detectan amenazas potenciales al éxito del proyecto. Esta tarea involucra a todo el equipo y se apoya en experiencias pasadas, análisis técnicos y sesiones de brainstorming.
-
-### 2. Análisis de Riesgos
-
-Cada riesgo se evalúa según su **probabilidad de ocurrencia** y **nivel de impacto**.  
-- **Riesgo Crítico:** Alta probabilidad y alto impacto.  
-- **Riesgo Moderado:** Puede manejarse con acciones preventivas.  
-- **Riesgo Bajo:** Se puede aceptar y monitorear.
-
-### 3. Planificación de Respuesta
-
-Se definen estrategias como:
-- **Mitigación:** Reducir la probabilidad o impacto (ej. usar pruebas automatizadas).
-- **Evitar:** Cambiar el plan para eliminar el riesgo (ej. no usar una tecnología incierta).
-- **Transferir:** Delegar el riesgo a un tercero (ej. contratar soporte técnico).
-- **Aceptar:** Reconocer el riesgo sin acción inmediata (cuando el impacto es mínimo).
-
-### 4. Monitoreo y Control
-
-El equipo revisa regularmente los riesgos para actualizar su estado, identificar nuevos y ajustar las respuestas.
+Esta fórmula ponderada da mayor peso al tiempo más probable, lo cual mejora la precisión de la planificación.
 
 ---
 
-## 🌐 Aplicación Práctica en el Proyecto
+## 📊 ¿Por qué usar PERT en Software?
 
-Durante la semana, analizamos los riesgos de nuestro proyecto en curso. Algunos hallazgos clave:
+El desarrollo de software está lleno de incertidumbre: cambios en requisitos, tecnologías nuevas, dependencias externas. PERT permite **abordar esa incertidumbre con datos**, ayudando a:
 
-- **Riesgo identificado:** El backend depende de una API externa sin SLA garantizado.
-- **Plan de respuesta:** Crear una capa de abstracción que permita reemplazar fácilmente esa API en caso de fallo.
-
-Otro ejemplo fue la rotación de integrantes del equipo. Para mitigar ese riesgo, se documentaron procesos clave y se asignaron roles redundantes.
+- Crear cronogramas más realistas.
+- Identificar actividades críticas.
+- Calcular márgenes de seguridad (holguras).
+- Prever retrasos antes de que ocurran.
 
 ---
 
-## 🎯 Conclusión: Prevenir es Mejor que Corregir
+## 🧩 Componentes Clave de un Diagrama PERT
 
-La gestión de riesgos no se trata solo de evitar problemas, sino de **anticiparse** a ellos. Al identificar amenazas desde etapas tempranas, los equipos pueden tomar mejores decisiones, proteger el proyecto y garantizar que el software cumpla con sus objetivos funcionales y de calidad.
+- **Nodos (eventos):** Representan el inicio o fin de una actividad.
+- **Arcos (actividades):** Muestran las tareas necesarias y sus duraciones esperadas.
+- **Ruta crítica:** Es la secuencia de actividades que determina la duración total del proyecto. Si una tarea de esta ruta se retrasa, todo el proyecto se retrasa.
+
+> **Ejemplo:**  
+> Si crear la base de datos tiene O=2, M=4 y P=8 días, entonces:  
+> TE = (2 + 4×4 + 8) / 6 = 26 / 6 ≈ 4.33 días.
+
+---
+
+## 📐 Aplicación Práctica en el Proyecto
+
+Durante la semana, aplicamos el análisis PERT a nuestras tareas clave. Ejemplo:
+
+- **Actividad:** Implementar backend  
+  - O: 3 días, M: 5 días, P: 9 días  
+  - TE: (3 + 4×5 + 9) / 6 = 32 / 6 ≈ 5.33 días
+
+Esto nos ayudó a:
+
+- Identificar cuáles tareas tienen mayor incertidumbre.
+- Determinar en qué partes conviene agregar márgenes.
+- Priorizar tareas críticas para cumplir con la fecha de entrega.
+
+---
+
+## ✅ Conclusión: Planificar con Incertidumbre es Posible
+
+El análisis PERT no elimina la incertidumbre, pero nos da herramientas para **entenderla y gestionarla con datos**. Con esta técnica, planificamos mejor, evitamos sorpresas y hacemos que nuestros proyectos sean más predecibles y eficientes.
 
 > **Frase para recordar:**  
-> “Gestionar riesgos es gestionar el futuro del proyecto”.
+> “Una buena estimación no es exacta, es útil.”
+
+---
