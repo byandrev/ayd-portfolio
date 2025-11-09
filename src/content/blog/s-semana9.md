@@ -1,7 +1,7 @@
 ---
 title: 'Semana 9: Preparación de Avances y Fundamentos de Reingenieria'
 description: ''
-pubDate: 2025-03-17T22:00:00.000Z
+pubDate: 2025-04-10T22:00:00.000Z
 heroImage: ../../assets/images/reingenieria.jpg
 category: Software
 tags:

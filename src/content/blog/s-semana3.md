@@ -1,7 +1,7 @@
 ---
 title: 'Semana 3: Riesgos en el Software'
 description: ''
-pubDate: 2025-02-24T22:00:00.000Z
+pubDate: 2025-03-10T22:00:00.000Z
 heroImage: ../../assets/images/gestion_de_riesgos.jpg
 category: Software
 tags:

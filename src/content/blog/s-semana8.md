@@ -1,7 +1,7 @@
 ---
 title: 'Semana 8: Pruebas avanzadas de Software: Integración, Regresión, Sistema y más'
 description: ''
-pubDate: 2025-03-17T22:00:00.000Z
+pubDate: 2025-04-01T22:00:00.000Z
 heroImage: ../../assets/images/testing_avanzado.jpg
 category: Software
 tags:
