@@ -1,7 +1,7 @@
 ---
 title: 'Semana 7: Prueba y Herramientas de Testing de Software'
 description: ''
-pubDate: 2025-03-17T22:00:00.000Z
+pubDate: 2025-03-20T22:00:00.000Z
 heroImage: ../../assets/images/testing.jpg
 category: Software
 tags:
